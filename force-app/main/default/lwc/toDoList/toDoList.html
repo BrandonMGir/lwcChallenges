@@ -1,0 +1,10 @@
+<template>
+    <lightning-card>
+        <lightning-input label="Todo" lwc:ref="todoInput"></lightning-input>
+        <lightning-button label="Add" onclick={handleButtonAdd}></lightning-button>
+        <template iterator:it={list}>
+            <p key={it.value.id}>{it.value.val}</p>
+            <lightning-button key={it.value.id} label='Delete' data-mydataattribute={it.index} onclick={remove}></lightning-button>
+        </template>
+    </lightning-card>
+</template>

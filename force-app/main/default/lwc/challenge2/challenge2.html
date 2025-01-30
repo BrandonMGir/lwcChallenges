@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+        <h1>{header}</h1>
+        <lightning-button label="Show" onclick={toggleVisible}></lightning-button>
+        <template lwc:if={isVisible}>
+            <lightning-input label="input" lwc:ref="input" onchange={handleInput}></lightning-input>
+        </template>
+    </lightning-card>
+</template>

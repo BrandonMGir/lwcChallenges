@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+            <lightning-input label="input" lwc:ref="input"></lightning-input>
+            <lightning-button label="add" onclick={handleInput}></lightning-button>
+            <template iterator:it={list}>
+                <p key={it.value.id}>{it.value.val}</p>
+            </template>
+    </lightning-card>
+</template>

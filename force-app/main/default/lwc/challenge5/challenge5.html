@@ -1,0 +1,25 @@
+<template>
+    <lightning-combobox
+        name="band"
+        label="Select band"
+        value={value.name}
+        options={options}
+        onchange={handleChange}
+        placeholder="Select a Band">
+    </lightning-combobox>
+    <template lwc:if={bandName}>
+        <lightning-card>
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <c-band name={bandName} image={bandImage}></c-band>
+                <lightning-button label="Learn More" onclick={showPanel}></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <template lwc:if={panelVisible}>
+                        <c-information description={bandDesc}></c-information>
+                    </template>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-card>
+    </template>
+</template>
