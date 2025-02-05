@@ -15,6 +15,10 @@ export default class Challenge8 extends LightningElement {
       })
       contact;
 
+      renderedCallback(){
+        console.log('CONTACT: ' + JSON.stringify(this.contact));
+      }
+
 
       get firstName() {
         return getFieldValue(this.contact.data, FNAME_FIELD);

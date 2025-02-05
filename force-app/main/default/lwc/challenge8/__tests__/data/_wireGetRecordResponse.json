@@ -1,0 +1,14 @@
+{
+    "apiName":"Contact",
+    "childRelationships":{},
+    "fields":{
+        "FirstName":{"displayValue":null,"value":"John"},
+        "LastName":{"displayValue":null,"value":"Doe"}
+    },
+    "id":"003E100000feZkcIAE",
+    "lastModifiedById":"005E100000IVvmLIAT",
+    "lastModifiedDate":"2025-01-30T14:23:44.000Z",
+    "recordTypeId":"012000000000000AAA",
+    "recordTypeInfo":null,
+    "systemModstamp":"2025-01-30T14:23:44.000Z"
+}
